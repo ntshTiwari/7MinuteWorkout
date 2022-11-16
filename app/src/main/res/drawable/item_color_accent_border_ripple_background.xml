@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    xmlns:android="http://schemas.android.com/apk/res/android" >-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#C4C4C4">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background">
+        <shape android:shape="oval">
+            <stroke android:width="5dp"
+                android:color="@color/colorAccent"/>
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!--    One more way of doing it is
+        we can have the upper item here
+        and the lower item in a different drawable
+
+        And add the other drawable like this
+        <item android:drawable="@drawable/item_circular_color_accent_border" />
+        -->
+</ripple>
